@@ -3,6 +3,11 @@
 version: "3"
 
 tasks:
+  install:
+    cmds:
+      - uv sync --dev
+      - uv run pre-commit install
+
   run:
     cmds:
       - uv run mcp run "server.py" -t sse
