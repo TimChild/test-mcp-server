@@ -25,8 +25,11 @@ async def get_resource(name: str) -> dict[str, str]:
     return {"name": name}
 
 
-if __name__ == "__main__":
+def main() -> None:
     print("Starting server...")
     mcp.run(transport=SERVER_TRANSPORT)
 
-print("exiting script")
+
+if __name__ == "__main__":
+    main()
+    print("exiting script")
