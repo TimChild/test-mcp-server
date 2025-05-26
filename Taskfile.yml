@@ -10,7 +10,7 @@ tasks:
 
   run:
     cmds:
-      - uv run mcp run "server.py" -t sse
+      - uv run mcp run "src/mcp_server/server.py" -t sse
 
   inspector:
     cmds:
